@@ -1,0 +1,70 @@
+{
+  "name": "spectaql",
+  "version": "0.0.1",
+  "description": "Generate a static documentation based on a GraphQL endpoint",
+  "preferGlobal": true,
+  "bin": {
+    "spectaql": "bin/spectaql"
+  },
+  "scripts": {
+    "build": "node bin/spectaql -l test/fixtures/cheese.png test/fixtures/cheese.yml",
+    "test": "mocha && node bin/spectaql -l test/fixtures/cheese.png test/fixtures/cheese.yml",
+    "develop": "spectaql -d",
+    "start": "spectaql -s"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bluebird": "^3.5.2",
+    "cheerio": "^1.0.0-rc.2",
+    "clarify": "^2.1.0",
+    "commander": "*",
+    "foundation-sites": "^6.5.0-rc.4",
+    "graphql": "^15.3.0",
+    "graphql-2-json-schema": "^0.2.0",
+    "grunt": "^1.0.3",
+    "grunt-compile-handlebars": "^2.0.2",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-handlebars": "^1.0.0",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-embed": "^0.2.1",
+    "grunt-prettify": "^0.4.0",
+    "grunt-sass": "^3.0.2",
+    "handlebars": "^4.0.12",
+    "highlight.js": "^9.13.0",
+    "js-yaml": "^3.12.0",
+    "json-refs": "^3.0.12",
+    "json-stable-stringify": "^1.0.1",
+    "lodash": "^4.17.11",
+    "marked": "^0.6.1",
+    "node-sass": "^4.14.1",
+    "sync-request": "^6.0.0",
+    "tmp": "0.0.33",
+    "trace": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balthazar/spectaql.git"
+  },
+  "keywords": [
+    "graphql",
+    "docs",
+    "documentation",
+    "builder",
+    "generator"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/balthazar/spectaql"
+}

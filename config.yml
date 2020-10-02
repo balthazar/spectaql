@@ -1,0 +1,50 @@
+apiUrl: http://localhost:8080/graphql
+prodUrl: https://api.viewblock.io/graphql
+
+info:
+  title: ViewBlock GraphQL API Docs
+  logo: https://cdn.viewblock.io/viewblock-light.png
+  description: |
+    Welcome to our GraphQL docs.
+
+    You will find here examples of queries you can make through our API and
+    playground, in addition to all of our types.
+
+    Do note that these examples do not necessarily query for all the possible
+    fields for simplicity sake, and you will have to look at the type
+    definitions to retrieve the information you need.
+
+    Make sure to copy example variables in the playground query variables tab
+    for your queries to work.
+
+groups:
+  - name: Block
+  - name: Address
+  - name: Transaction
+  - name: Contract
+  - name: Token
+  - name: Analytics
+    match: txCount|timeData
+
+expandBlackList:
+  - extra
+  - docs
+  - txs
+
+defaultValues:
+  - name: chain
+    value: zilliqa
+  - name: network
+    value: mainnet
+  - name: page
+    value: 1
+  - name: height
+    value: 100
+  - name: granularity
+    value: daily
+  - name: offset
+    value: 0
+  - name: start
+    value: now-1M
+  - name: end
+    value: now
