@@ -30,6 +30,11 @@ expandBlackList:
   - extra
   - docs
   - txs
+  - pools
+  - stateCounts
+  - nodes
+  - avgNodesAPY
+  - totalRuneStaked
 
 defaultValues:
   - name: chain
@@ -40,11 +45,7 @@ defaultValues:
     value: 1
   - name: height
     value: 100
-  - name: granularity
-    value: daily
   - name: offset
     value: 0
-  - name: start
-    value: now-1M
-  - name: end
-    value: now
+  - name: ago
+    value: 1M
