@@ -7,6 +7,10 @@ info:
   description: |
     Welcome to our GraphQL docs.
 
+    Before being able to make queries, you will need to register on [viewblock.io](https://viewblock.io),
+    verify your email and create an API key. This API key (not the secret) is
+    going to be required on every request you make as the `X-APIKEY` header.
+
     You will find here examples of queries you can make through our API and
     playground, in addition to all of our types.
 
